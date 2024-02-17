@@ -20,20 +20,20 @@ We ensure that the execution time of the targeted EU dominates the execution tim
 - Non-targeted EUs: A vertex shading program (Quick to complete)
 - Targeted EUs: Execution time is highly sensitive to the differences among individual EUs.
 
-<img src="/images/P201.png" width="400" height="300">
+<img src="/images/P201.png" width="400">
 
 GPU fingerprinting technique:
 - Points are rendered in parallel using several EUs
 - The EU drawing point i executes a stall function (dark), while other EUs return a hard-coded value (light)
 - The execution time of each iteration is bounded by the slowest EU
 
-![](/images/P202.png)
+<img src="/images/P202.png" width="400">
 
 Render(WebGL API to draw a number of points in parallel): 
 - These points are assigned to different execution units (EUs) of the GPU for processing to facilitate subsequent analysis of the GPU's behavioral characteristics.
 - Minimizes the noise from the pipeline and its interference with our technique
 
-![](/images/P203.png)
+<img src="/images/P203.png" width="400">
 
 Stall(Function for the shader):
 - Measure and differentiate the performance differences of different EUs within the GPU. The drawing operations of non-target EUs are completed quickly, while the drawing operations of target EUs are slowed down due to the execution of the stall function.
