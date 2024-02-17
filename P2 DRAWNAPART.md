@@ -20,7 +20,7 @@ We ensure that the execution time of the targeted EU dominates the execution tim
 - Non-targeted EUs: A vertex shading program (Quick to complete)
 - Targeted EUs: Execution time is highly sensitive to the differences among individual EUs.
 
-![](/images/P201.png)
+<img src="/images/P201.png" width="400" height="300">
 
 GPU fingerprinting technique:
 - Points are rendered in parallel using several EUs
